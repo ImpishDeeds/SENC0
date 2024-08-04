@@ -41,7 +41,10 @@ eleventyNavigation:
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Governing documents: <a href="https://docs.google.com/document/d/1R1M9MmpzxU0Z63WgwIj3WU22Ct4-DGnOwjVA0jKZFzs/edit?usp=sharing">Bylaws</a>, <a href="https://drive.google.com/file/d/1WBUqjZmukS5jf-aZZ3GItlPpsYbbS5I1/view?usp=sharing">TMC 1.45</a>, <a href="https://drive.google.com/file/d/13xhBzJotiLrYhDnxzNLaH_ma-eSe58Kb/view?usp=sharing">CoT Standards &amp; Guidelines</a>
+                    </p>
+                    <p>
+                        We are <em> Working Together to Make the South End Better </em> …for everyone in the South End!
                     </p>
                 </div>
                 <label>
@@ -52,9 +55,6 @@ eleventyNavigation:
                     Email
                     <input required type="text" id="email" name="email" placeholder="Email">
                 </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
                 </label>
                 <label>
                     How Did You Find Us
@@ -70,20 +70,15 @@ eleventyNavigation:
                 <!--Email-->
                 <span class="cs-header">Email</span>
                 <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
+                    {{4911 South Alaska Avenue}},
                     <br/>
                     <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
+                        {{Tacoma}}
+                        {{WA}}
+                        {{98418}}
                     </span>
                 </a>
 
