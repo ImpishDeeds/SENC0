@@ -68,15 +68,20 @@ eleventyNavigation:
                 <!--Email-->
                 <span class="cs-header">Email</span>
                 <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{4911 South Alaska Avenue}},
+                    {{client.address.lineOne}},
+                    <br/>
+                    {{client.address.lineTwo}},
                     <br/>
                     <span class="cs-block">
-                        {{Tacoma}}
-                        {{WA}}
-                        {{98418}}
+                        {{client.address.city}}
+                        {{client.address.state}}
+                        {{client.address.zip}}
                     </span>
                 </a>
 
